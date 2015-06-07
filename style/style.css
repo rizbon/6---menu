@@ -151,9 +151,11 @@ div.block > ul{
 }
 #slider {
 	overflow: hidden;
+	padding-left: 0;
+	padding-right: 0;
 }
 #slider ul {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   width: 1000%;
   margin: 0;
@@ -164,10 +166,10 @@ div.block > ul{
 #slider ul li {
 	float: left;
 	width: 920px;
-
+	
 }
 ol{
-	margin: 0 auto;
+	margin: 200px auto 0 auto;
 	padding: 30px 20px;
 	list-style: none;
 	bottom: 0px;
@@ -195,6 +197,7 @@ ol > li > a:hover:not(.active) {
 }
 ol > li > a.active{
 	background: #a9afb3;
+	/*pointer-events: none;*/
 	cursor: default;
 	-webkit-transition: all 250ms ease-out;
 	-moz-transition: all 250ms ease-out;
